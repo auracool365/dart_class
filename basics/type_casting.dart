@@ -1,5 +1,5 @@
 void main() {
-  /*   // 1. Explicit type casting
+  // 1. Explicit type casting
   Object userName = "John";
   Object PI = "3.14159";
   Object numberOfFans = "4";
@@ -77,7 +77,7 @@ void main() {
   print(actualRate2);
   print(
     "$actualRate2 + $actualRate2 = ${actualRate1 + actualRate2} (as double)",
-  ); */
+  );
 
   // typecasting int type to double
   double price = 60.1;
@@ -89,9 +89,11 @@ void main() {
   print(var2);
 
   double var3 = 10.7;
-  print(var3.truncate()); // Removes the decimal 
+  print(var3.truncate()); // Removes the decimal
 
   print(price.ceil()); // Rounds up to nearest largest whole number
   print(price.floor()); // Rounds to the nearest smallest whole number
-  print(var3.round()); // rounds to the nearest whole number e.g 4.3 = 4, 4.6 = 5
+  print(
+    var3.round(),
+  ); // rounds to the nearest whole number e.g 4.3 = 4, 4.6 = 5
 }
