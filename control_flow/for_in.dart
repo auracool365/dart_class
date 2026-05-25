@@ -10,4 +10,13 @@ void main() {
     print('$count. $fruit');
     count++;
   }
+
+  List<String> names = ["Paul", "Dami", "Ade", "Faith", "Ola"];
+  print(names);
+
+  count = 0;
+  for (var name in names) {
+    print('$count. $name');
+    count++;
+  }
 }
