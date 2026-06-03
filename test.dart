@@ -35,7 +35,7 @@ Function trackScores() {
   return () {
     print("Your score is $score");
     score += 5;
-    if (score >= 25) {
+    if (score == 25) {
       print("Congratulations, you crossed the $score mark threshold!");
     }
   };
@@ -43,7 +43,7 @@ Function trackScores() {
 
 void main() {
   // duplicate int list
-/*   List<int> ages = [55, 65, 75, 85, 95, 55, 75];
+  /*   List<int> ages = [55, 65, 75, 85, 95, 55, 75];
   findDuplicates(ages);
 
   // duplicate double list
@@ -65,6 +65,8 @@ void main() {
 
   // closure
   var track = trackScores();
+  track();
+  track();
   track();
   track();
   track();
