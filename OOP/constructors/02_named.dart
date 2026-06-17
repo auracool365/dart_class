@@ -1,5 +1,7 @@
 /* Named Constructors: Provides multiple ways to create objects based on the same class */
 
+/* Initializer lists run before the constructor body. Used to set final fields that need computation, or to call a superclass constructor. */
+
 class Car {
   String make;
   String model;
