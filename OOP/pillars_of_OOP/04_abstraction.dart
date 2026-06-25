@@ -21,15 +21,13 @@ class Dog extends Animal {
 
   @override
   void makeSound() => print('$name says Woof!');
-  
 }
 
 class Cat extends Animal {
   Cat({required String name}) : super(name: name);
 
   @override
-  void makeSound() =>  print('$name says Meow!');
-  
+  void makeSound() => print('$name says Meow!');
 }
 
 class Cow extends Animal {
@@ -59,7 +57,7 @@ abstract class PaymentProcessor {
   }
 }
 
-// Card payment processor 
+// Card payment processor
 class CardPayment extends PaymentProcessor {
   double _balance;
 
@@ -152,8 +150,7 @@ void checkout(PaymentProcessor processor, double amount) {
   print('Remaining Balance: ₦${processor.balance.toStringAsFixed(2)}\n');
 }
 
-void main () {
-
+void main() {
   // Example 1. Animals abstraction
   List<Animal> animals = [
     Dog(name: 'Bold'),
@@ -166,8 +163,7 @@ void main () {
     animal.makeSound();
   }
 
-
-   // Example 2 — Payment abstraction
+  // Example 2 — Payment abstraction
   print('\nPayment System\n');
 
   checkout(CardPayment(balance: 50000), 12000);
@@ -175,5 +171,4 @@ void main () {
   checkout(MobileMoney(wallet: 20000), 12000);
 
   checkout(BankTransfer(balance: 100000), 12000);
-
 }
