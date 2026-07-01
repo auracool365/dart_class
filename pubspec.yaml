@@ -1,0 +1,7 @@
+name: dart_class
+
+environment:
+  sdk: "^3.12.0"
+
+dependencies:
+  equatable: ^2.0.8
