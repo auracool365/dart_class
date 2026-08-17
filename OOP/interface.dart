@@ -26,7 +26,9 @@ abstract class Notification {
   void notify();
 }
 
-// All of them will behave like objects of the Notification Class, but that should not be the case
+// All of them implement the contract, and have their own implementation of the notify() method. without having to: 
+// 1. extend the Notification class
+// 2. inherit the behavior of the notify() method
 class User implements Notification {
   @override
   void notify() {
